@@ -22,20 +22,20 @@ const userSlice = createSlice({
   name: 'users',
   initialState,
   reducers: {
-    addUser: (state : any, action: PayloadAction<User>) => {
+    addUser: (state : UserState, action: PayloadAction<User>) => {
       state.users.push(action.payload);
       localStorage.setItem('users', JSON.stringify(state.users));
     },
-    updateUser: (state : any, action: PayloadAction<{ id: number; data: User }>) => {
+    updateUser: (state : UserState, action: PayloadAction<{ id: number; data: User }>) => {
       const { id, data } = action.payload;
-      const index = state.users.findIndex((user : any) => user.id === id);
+      const index = state.users.findIndex((user : User) => user.id === id);
       if (index !== -1) {
         state.users[index] = data;
         localStorage.setItem('users', JSON.stringify(state.users));
       }
     },
-    deleteUser: (state : any, action: PayloadAction<number>) => {
-      state.users = state.users.filter((user : any) => user.id !== action.payload);
+    deleteUser: (state : UserState, action: PayloadAction<number>) => {
+      state.users = state.users.filter((user : User) => user.id !== action.payload);
       localStorage.setItem('users', JSON.stringify(state.users));
     },
   },
