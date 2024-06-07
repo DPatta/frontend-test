@@ -1,0 +1,121 @@
+.container {
+  margin: 0 5%;
+}
+
+.handle-bar {
+  justify-content: center;
+}
+
+.btn-handle {
+  height: unset;
+  width: unset;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2.5px;
+  padding: 15px 30px;
+}
+.btn-handle .icon-btn {
+  justify-content: center;
+  width: 100%;
+}
+.btn-handle .label-btn p {
+  margin: 0;
+}
+.btn-handle:hover {
+  color: unset !important;
+  border-color: #ffa200 !important;
+  background: #ffa200 !important;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+}
+.triangle.left {
+  border-top: 20px solid transparent;
+  border-right: 40px solid gray;
+  border-bottom: 20px solid transparent;
+}
+.triangle.up {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid gray;
+  margin: 0 10px;
+}
+.triangle.down {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid gray;
+  margin: 0 10px;
+}
+.triangle.right {
+  border-top: 20px solid transparent;
+  border-left: 40px solid gray;
+  border-bottom: 20px solid transparent;
+}
+
+.block-item {
+  margin: 20px 0;
+}
+.block-item.end {
+  justify-content: flex-end;
+}
+.block-item.start {
+  justify-content: flex-start;
+}
+
+.btn-item {
+  height: unset;
+  width: 25%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2.5px;
+  padding: 15px 30px;
+}
+.btn-item .square {
+  width: 100px;
+  height: 100px;
+  background: gray;
+}
+.btn-item .circle {
+  width: 100px;
+  height: 100px;
+  background: gray;
+  border-radius: 50%;
+}
+.btn-item .oval {
+  width: 150px;
+  height: 100px;
+  background: gray;
+  border-radius: 150px/100px;
+}
+.btn-item .trapezoid {
+  border-bottom: 100px solid gray;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100px;
+}
+.btn-item .rectangle {
+  width: 150px;
+  height: 100px;
+  background: gray;
+}
+.btn-item .parallelogram {
+  width: 150px;
+  height: 100px;
+  transform: skew(20deg);
+  background: gray;
+}
+.btn-item:hover {
+  color: unset !important;
+  border-color: #ffa200 !important;
+  background: #ffa200 !important;
+}
+
+.block-form {
+  margin: 0 10%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+}

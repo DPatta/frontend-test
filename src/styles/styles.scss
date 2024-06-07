@@ -1,0 +1,121 @@
+$primary-color: #ffa200;
+$secondary-color: #6eda78;
+
+.container {
+  margin: 0 5%;
+}
+.handle-bar {
+  justify-content: center;
+}
+.btn-handle {
+  height: unset;
+  width: unset;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2.5px;
+  padding: 15px 30px;
+  .icon-btn {
+    justify-content: center;
+    width: 100%;
+  }
+  .label-btn {
+    p {
+      margin: 0;
+    }
+  }
+  &:hover {
+    color: unset !important;
+    border-color: $primary-color !important;
+    background: $primary-color !important;
+  }
+}
+.triangle {
+  width: 0;
+  height: 0;
+
+  &.left {
+    border-top: 20px solid transparent;
+    border-right: 40px solid gray;
+    border-bottom: 20px solid transparent;
+  }
+  &.up {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid gray;
+    margin: 0 10px;
+  }
+  &.down {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid gray;
+    margin: 0 10px;
+  }
+  &.right {
+    border-top: 20px solid transparent;
+    border-left: 40px solid gray;
+    border-bottom: 20px solid transparent;
+  }
+}
+.block-item {
+    margin: 20px 0;
+    &.end {
+        justify-content: flex-end;
+    }
+    &.start {
+        justify-content: flex-start;
+    }
+}
+.btn-item {
+  height: unset;
+  width: 25%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2.5px;
+  padding: 15px 30px;
+  .square {
+    width: 100px;
+    height: 100px;
+    background: gray;
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: gray;
+    border-radius: 50%;
+  }
+  .oval {
+    width: 150px;
+    height: 100px;
+    background: gray;
+    border-radius: 150px / 100px;
+  }
+  .trapezoid {
+    border-bottom: 100px solid gray;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 100px;
+  }
+  .rectangle {
+    width: 150px;
+    height: 100px;
+    background: gray;
+  } 
+  .parallelogram {
+    width: 150px;
+    height: 100px;
+    transform: skew(20deg);
+    background: gray;
+  } 
+  &:hover {
+    color: unset !important;
+    border-color: $primary-color !important;
+    background: $primary-color !important;
+  }
+}
+.block-form {
+    margin: 0 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
